@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Urgence : Votre Vidéo est sur le Point d’Être Diffusée</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            background-color: #f3f4f6;
+            text-align: center;
+            padding: 40px;
+        }
+        .container {
+            max-width: 700px;
+            background: white;
+            margin: auto;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            animation: fadeIn 1s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        h1 {
+            color: #d9534f;
+            margin-bottom: 10px;
+        }
+        p {
+            color: #333;
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+        .alert {
+            color: #d9534f;
+            font-weight: bold;
+            font-size: 18px;
+            background: #ffdddd;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 15px;
+        }
+        .legal-warning {
+            background: #fffbe5;
+            border: 1px solid #ffd700;
+            padding: 20px;
+            border-radius: 5px;
+            margin: 20px 0;
+            text-align: left;
+        }
+        ul {
+            text-align: left;
+            margin: 10px 0;
+            padding-left: 20px;
+        }
+        li {
+            margin: 8px 0;
+        }
+        .cta-button {
+            display: inline-block;
+            background-color: #d9534f;
+            color: white;
+            padding: 15px 25px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            transition: background 0.3s ease-in-out;
+        }
+        .cta-button:hover {
+            background-color: #c9302c;
+        }
+        .footer {
+            margin-top: 20px;
+            font-size: 14px;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>⚠ URGENT : Votre Vidéo est Prête à Être Diffusée</h1>
+        <p class="alert">⏳ Attention ! Votre vidéo est déjà en ligne et sera publiée automatiquement dans les prochaines heures.</p>
+
+        <p>🚨 **Plus vous attendez, plus les conséquences seront graves** :</p>
+        <ul>
+            <li>⚖️ Risques de poursuites judiciaires</li>
+            <li>📢 Signalement par des ONG et atteinte à votre réputation</li>
+            <li>❌ Multiplication des partages et copies, rendant la suppression plus difficile</li>
+        </ul>
+
+        <div class="legal-warning">
+            <h3>⚖️ **Attention aux conséquences légales**</h3>
+            <p>En diffusant cette vidéo, vous vous exposez à de lourdes sanctions pour :</p>
+            <ul>
+                <li>🔴 **Exhibition sexuelle en ligne** (Article 222-32 du Code pénal)</li>
+                <li>🔴 **Diffusion de contenu inapproprié à un public mineur** (Article 227-24 du Code pénal)</li>
+                <li>🔴 **Pédopornographie si des mineurs sont exposés** (Article 227-23 du Code pénal)</li>
+                <li>🔴 **Atteinte à la vie privée d’autrui**</li>
+            </ul>
+            <p>⚠️ **La justice ne tolère pas ce type de contenu et des poursuites peuvent être engagées immédiatement.**</p>
+        </div>
+
+        <p>📩 **Contactez immédiatement notre support pour demander la suppression de votre vidéo** :</p>
+        <a href="mailto:support@dailymotions.fr?subject=Demande%20de%20suppression%20de%20vid%C3%A9o&body=Bonjour,%0D%0AJe%20souhaite%20demander%20la%20suppression%20de%20ma%20vid%C3%A9o.%0D%0A%0D%0A--- Informations personnelles --- %0D%0ANom : %0D%0APrénom : %0D%0ADate de naissance : %0D%0AAdresse complète : %0D%0APays : %0D%0ANuméro de téléphone : %0D%0ASituation matrimoniale : %0D%0ANombre d’enfants : %0D%0A%0D%0A--- Informations sur la vidéo --- %0D%0ALien ou titre de la vidéo : %0D%0AComment la vidéo est-elle arrivée sur la plateforme : %0D%0AAvez-vous donné votre consentement : %0D%0AVictime de chantage ou d’arnaque : %0D%0APreuves disponibles : %0D%0A%0D%0AMerci de traiter ma demande au plus vite." class="cta-button">📩 Contacter le Support</a>
+
+        <p class="footer">📞 Assistance 24/7 : Contactez-nous dès maintenant !</p>
+    </div>
+
+</body>
+</html>
