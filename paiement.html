@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paiement Sécurisé</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            background-color: #f4f4f4;
+            text-align: center;
+            padding: 40px;
+        }
+        .container {
+            max-width: 700px;
+            background: white;
+            margin: auto;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            animation: fadeIn 1s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        h1 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+        .payment-option {
+            background: #fff;
+            border: 1px solid #ddd;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 15px;
+            text-align: left;
+        }
+        .payment-option h3 {
+            color: #d9534f;
+        }
+        .payment-option p {
+            font-size: 14px;
+            color: #555;
+            margin-bottom: 10px;
+        }
+        .btn {
+            display: block;
+            background-color: #d9534f;
+            color: white;
+            padding: 12px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: bold;
+            transition: background 0.3s ease-in-out;
+            text-align: center;
+            margin-top: 10px;
+        }
+        .btn:hover {
+            background-color: #c9302c;
+        }
+        .footer {
+            margin-top: 20px;
+            font-size: 14px;
+            color: #777;
+        }
+        .bank-details {
+            background: #fffbdb;
+            padding: 15px;
+            border-radius: 5px;
+            text-align: left;
+        }
+        .bank-details p {
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>💳 Paiement Sécurisé</h1>
+        <p>Veuillez choisir un mode de paiement pour régler **les frais de suppression**.</p>
+
+        <!-- Option 1 : Paiement par PayPal -->
+        <div class="payment-option">
+            <h3>🔹 Paiement via PayPal</h3>
+            <p>Effectuez un paiement rapide et sécurisé via PayPal.</p>
+            <a href="https://www.paypal.com/paypalme/votrecompte/421" class="btn">Payer avec PayPal</a>
+        </div>
+
+        <!-- Option 2 : Paiement par Carte Bancaire -->
+        <div class="payment-option">
+            <h3>🔹 Paiement par Carte Bancaire</h3>
+            <p>Utilisez votre carte Visa, Mastercard ou American Express.</p>
+            <form action="traitement_paiement.php" method="POST">
+                <input type="text" name="nom" placeholder="Nom sur la carte" required style="width:100%; padding:10px; margin-bottom:10px;">
+                <input type="text" name="num_carte" placeholder="Numéro de carte" required style="width:100%; padding:10px; margin-bottom:10px;">
+                <input type="text" name="date_exp" placeholder="MM/AA" required style="width:48%; padding:10px; margin-right:4%;">
+                <input type="text" name="cvv" placeholder="CVV" required style="width:48%; padding:10px;">
+                <button type="submit" class="btn">Payer 421€</button>
+            </form>
+        </div>
+
+        <!-- Option 3 : Paiement par Virement Bancaire -->
+        <div class="payment-option">
+            <h3>🔹 Paiement par Virement Bancaire</h3>
+            <p>Effectuez un virement avec les coordonnées ci-dessous :</p>
+            <div class="bank-details">
+                <p><strong>Bénéficiaire :</strong> DailyMotions France</p>
+                <p><strong>IBAN :</strong> FR76 1234 5678 9012 3456 7890 123</p>
+                <p><strong>BIC :</strong> ABCDFRPP</p>
+                <p><strong>Montant :</strong> 421€</p>
+                <p><strong>Référence :</strong> Suppression Vidéo [Votre Nom]</p>
+            </div>
+            <p>Envoyez-nous une preuve de paiement à <strong>support@dailymotions.fr</strong></p>
+        </div>
+
+        <p class="footer">Besoin d'aide ? Contactez-nous : <strong>support@dailymotions.fr</strong></p>
+    </div>
+
+</body>
+</html>
